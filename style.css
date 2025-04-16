@@ -137,3 +137,10 @@ footer {
   float: right;
   color: var(--marron-oscuro);
 }
+.menu-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
