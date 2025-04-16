@@ -145,6 +145,6 @@ footer {
   margin-bottom: 1rem;
 }
 .logo {
-  height: 50px; /* puedes ajustar el tamaño según te convenga */
+  height: 10px; /* puedes ajustar el tamaño según te convenga */
   object-fit: contain;
 }
