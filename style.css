@@ -1,10 +1,60 @@
-/* Carrusel */
+:root {
+  --marron-oscuro: #7A341D;
+  --marron: #B9661E;
+  --naranja-suave: #E59D6C;
+  --crema: #EAC0A0;
+  --font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--crema);
+  color: var(--marron-oscuro);
+}
+
+header {
+  background-color: var(--marron);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo img {
+  width: 120px;
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+main {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.hero {
+  background: var(--naranja-suave);
+  padding: 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
 .carousel {
   overflow: hidden;
   width: 100%;
   height: 300px;
   position: relative;
-  margin-bottom: 20px;
 }
 
 .carousel-track {
@@ -26,10 +76,8 @@
   100% { transform: translateX(0); }
 }
 
-/* Ajustes para texto en la sección hero */
 .hero-text {
-  text-align: center;
-  padding: 20px;
+  padding: 2rem;
 }
 
 .hero h1 {
@@ -39,5 +87,19 @@
 
 .hero p {
   font-size: 1.2em;
-  color: #555;
+  color: #5c2d1a;
+}
+
+footer {
+  background-color: var(--marron);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons img {
+  width: 24px;
+  margin-left: 10px;
 }
