@@ -150,9 +150,8 @@ footer {
   justify-content: center;
   height: 100%;
 }
-
 .logo {
-  height: 3rem; /* Aumentamos el tamaño del logo un 50% */
-  width: auto; /* Asegura que la relación de aspecto no se distorsione */
+  height: 2.7rem;
+  width: auto;
   object-fit: contain;
 }
