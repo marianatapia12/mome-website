@@ -147,11 +147,12 @@ footer {
 .nombre-marca {
   display: flex;
   align-items: center;
-  justify-content: center; /* Alinea el logo al centro */
+  justify-content: center;
   height: 100%;
 }
 
 .logo {
-  height: 3rem; /* Ajusta el tamaño del logo (equivalente al tamaño de un texto típico) */
-  object-fit: contain; /* Asegura que el logo no se distorsione */
+  height: 3rem; /* Aumentamos el tamaño del logo un 50% */
+  width: auto; /* Asegura que la relación de aspecto no se distorsione */
+  object-fit: contain;
 }
