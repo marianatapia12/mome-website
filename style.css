@@ -51,30 +51,31 @@ main {
 }
 
 .carousel {
-  overflow: hidden;
   width: 100%;
-  height: 250px;
+  height: 400px;
+  overflow: hidden;
   position: relative;
 }
 
 .carousel-track {
   display: flex;
-  width: 250%;
+  width: 300%; /* Cambia a 400% si tienes 4 imágenes */
   animation: slide 12s infinite;
 }
 
 .carousel-track img {
-  width: 100vw;
-  height: 250px;
+  width: 100%;
+  height: 400px;
   object-fit: cover;
 }
 
 @keyframes slide {
-  0% { transform: translateX(0); }
-  33% { transform: translateX(-100vw); }
-  66% { transform: translateX(-200vw); }
+  0%   { transform: translateX(0); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
   100% { transform: translateX(0); }
 }
+
 
 .hero-text {
   padding: 2rem;
