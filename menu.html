@@ -2,30 +2,21 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Menú | MOME</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menú MOME</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Marcellus&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="nombre-marca">MOME</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="menu.html" class="activo">Menú</a></li>
-        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-        <li><a href="reseñas.html">Reseñas</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+    <h1>Menú MOME</h1>
+    <p>Comida consciente, deliciosa y saludable</p>
   </header>
 
-  <main class="menu">
-    <h1 class="titulo-menu">Nuestro Menú Saludable</h1>
-
+  <main>
+    <!-- Pizzas Keto -->
     <section class="categoria">
       <h2>Pizzas Keto</h2>
+      <img src="assets/menu/pizza-keto.jpg" alt="Pizza keto" class="imagen-menu" />
       <div class="item">
         <h3>Pizza de Queso & Albahaca</h3>
         <p>Masa de coliflor, queso mozzarella, salsa natural y hojas frescas de albahaca.</p>
@@ -40,63 +31,80 @@
       </div>
     </section>
 
+    <!-- Waffles Keto -->
     <section class="categoria">
-      <h2>Waffles & Desayunos</h2>
+      <h2>Waffles Saludables</h2>
+      <img src="assets/menu/waffles.jpg" alt="Waffles keto" class="imagen-menu" />
       <div class="item">
-        <h3>Waffles de Almendra</h3>
-        <p>Waffles suaves con harina de almendra, servidos con miel de agave.</p>
-        <span class="etiquetas">Gluten Free</span>
+        <h3>Waffle de Almendra</h3>
+        <p>Servido con crema batida sin azúcar y frutos rojos frescos.</p>
+        <span class="etiquetas">Keto · Gluten Free</span>
         <span class="precio">$85</span>
       </div>
     </section>
 
+    <!-- Cafés, Jugos y Bebidas -->
     <section class="categoria">
-      <h2>Cafés & Bebidas</h2>
+      <h2>Cafés, Jugos & Bebidas Naturales</h2>
+      <img src="assets/menu/bebidas.jpg" alt="Bebidas saludables" class="imagen-menu" />
+
+      <div class="item"><h3>Americano</h3><p>Café filtrado con granos orgánicos.</p><span class="precio">$45</span></div>
+      <div class="item"><h3>Latte</h3><p>Leche de avena o almendra, con espresso orgánico.</p><span class="precio">$55</span></div>
+      <div class="item"><h3>Matcha Latte</h3><p>Matcha japonés, leche vegetal y endulzante natural.</p><span class="precio">$65</span></div>
+      <div class="item"><h3>Chai Latte</h3><p>Infusión de especias, leche vegetal y toque dulce natural.</p><span class="precio">$60</span></div>
+      <div class="item"><h3>Chocolate caliente</h3><p>Hecho con cacao natural y endulzado con monkfruit.</p><span class="etiquetas">Sugar Free</span><span class="precio">$55</span></div>
+      <div class="item"><h3>Frappe de café</h3><p>Con leche vegetal, hielo y toque de canela.</p><span class="precio">$65</span></div>
+      <div class="item"><h3>Smoothie Verde</h3><p>Espinaca, manzana, pepino y jengibre.</p><span class="etiquetas">Sugar Free</span><span class="precio">$70</span></div>
+      <div class="item"><h3>Jugo Fresco</h3><p>Naranja, zanahoria o betabel con jengibre. 100% natural.</p><span class="precio">$50</span></div>
+      <div class="item"><h3>Kombucha</h3><p>Bebida fermentada con frutas naturales (sabor del día).</p><span class="precio">$75</span></div>
+    </section>
+
+    <!-- Ensaladas -->
+    <section class="categoria">
+      <h2>Ensaladas & Snacks</h2>
+      <img src="assets/menu/ensalada.jpg" alt="Ensalada saludable" class="imagen-menu" />
       <div class="item">
-        <h3>Latte de Avena</h3>
-        <p>Shot de espresso orgánico con leche de avena espumada.</p>
-        <span class="precio">$55</span>
-      </div>
-      <div class="item">
-        <h3>Capuchino Clásico</h3>
-        <p>Espresso doble con leche cremosa y espuma ligera.</p>
-        <span class="precio">$58</span>
+        <h3>Ensalada César con Frutos</h3>
+        <p>Lechuga orgánica, frutos secos, pollo, aderezo sin lactosa.</p>
+        <span class="etiquetas">Gluten Free</span>
+        <span class="precio">$95</span>
       </div>
     </section>
 
-    <section class="categoria">
-      <h2>Tizanas & Lattes</h2>
-      <div class="item">
-        <h3>Matcha Latte</h3>
-        <p>Matcha japonés con leche vegetal y toque de vainilla natural.</p>
-        <span class="etiquetas">Sugar Free</span>
-        <span class="precio">$65</span>
-      </div>
-      <div class="item">
-        <h3>Chai Latte</h3>
-        <p>Infusión de especias con leche vegetal espumada y canela.</p>
-        <span class="precio">$62</span>
-      </div>
-    </section>
-
+    <!-- Postres -->
     <section class="categoria">
       <h2>Postres Saludables</h2>
+      <img src="assets/menu/postres.jpg" alt="Postres keto" class="imagen-menu" />
+
       <div class="item">
         <h3>Cheesecake Keto</h3>
         <p>Base de nuez, crema suave sin azúcar, decorado con frutos rojos frescos.</p>
         <span class="etiquetas">Keto · Sugar Free</span>
         <span class="precio">$75</span>
       </div>
+      <div class="item">
+        <h3>Galletas de Almendra</h3>
+        <p>Sin azúcar, sin gluten y elaboradas con mantequilla de almendra.</p>
+        <span class="etiquetas">Keto · Gluten Free</span>
+        <span class="precio">$40</span>
+      </div>
+      <div class="item">
+        <h3>Pastel de Zanahoria Saludable</h3>
+        <p>Hecho con harina de coco, endulzado naturalmente.</p>
+        <span class="etiquetas">Gluten Free</span>
+        <span class="precio">$70</span>
+      </div>
+      <div class="item">
+        <h3>Pay de Limón</h3>
+        <p>Base sin harina, con relleno cítrico sin azúcar añadido.</p>
+        <span class="etiquetas">Keto</span>
+        <span class="precio">$70</span>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 MOME | Todos los derechos reservados</p>
-    <div class="social-icons">
-      <a href="#"><img src="assets/icons/icon_instagram.png" alt="Instagram"></a>
-      <a href="#"><img src="assets/icons/icon_twitter.png" alt="Facebook"></a>
-    </div>
+    <p>© 2025 MOME - Cocina saludable con amor.</p>
   </footer>
 </body>
 </html>
-
