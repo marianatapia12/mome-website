@@ -22,9 +22,9 @@ header {
 }
 
 .logo img {
-  width: auto;
+  width: 120px;
   height: auto;
-  max-height: 80px;
+  display: block; 
 }
 
 nav ul {
