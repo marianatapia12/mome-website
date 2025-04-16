@@ -144,7 +144,14 @@ footer {
   border-radius: 15px;
   margin-bottom: 1rem;
 }
+.nombre-marca {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Alinea el logo al centro */
+  height: 100%;
+}
+
 .logo {
-  height: 10px; /* puedes ajustar el tamaño según te convenga */
-  object-fit: contain;
+  height: 2rem; /* Ajusta el tamaño del logo (equivalente al tamaño de un texto típico) */
+  object-fit: contain; /* Asegura que el logo no se distorsione */
 }
