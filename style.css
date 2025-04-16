@@ -138,8 +138,8 @@ footer {
   color: var(--marron-oscuro);
 }
 .menu-img {
-  width: 100%;
-  max-width: 400px;
+  width: 50%;
+  max-width: 200px;
   height: auto;
   border-radius: 15px;
   margin-bottom: 1rem;
