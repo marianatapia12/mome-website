@@ -3,12 +3,12 @@
   --marron: #B9661E;
   --naranja-suave: #E59D6C;
   --crema: #EAC0A0;
-  --fuente: 'Arial', sans-serif;
+  --font-family: 'Quicksand', sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: var(--fuente);
+  font-family: 'Quicksand', sans-serif;
   background-color: var(--crema);
   color: var(--marron-oscuro);
 }
