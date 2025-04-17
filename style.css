@@ -156,3 +156,68 @@ footer {
   object-fit: contain;
   display: block;
 }
+.sobre-nosotros {
+  padding: 2rem;
+  background-color: var(--crema);
+  color: var(--marron-oscuro);
+  text-align: center;
+}
+
+.intro-nosotros h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.intro-nosotros p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.valores-nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.valor {
+  background-color: var(--naranja-suave);
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 280px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+}
+
+.valor h2 {
+  color: var(--marron);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.historia-nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.historia-nosotros img {
+  width: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.historia-nosotros div {
+  max-width: 500px;
+  text-align: left;
+}
+
+.historia-nosotros h2 {
+  color: var(--marron);
+  margin-bottom: 1rem;
+}
