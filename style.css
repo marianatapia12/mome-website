@@ -156,87 +156,94 @@ footer {
   object-fit: contain;
   display: block;
 }
-.about-hero {
-  background-color: var(--naranja-suave);
-  text-align: center;
-  padding: 4rem 2rem;
-  color: var(--marron-oscuro);
-}
-
-.about-hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.about-section {
-  padding: 4rem 2rem;
+body {
+  margin: 0;
+  font-family: var(--font-family);
   background-color: var(--crema);
-}
-
-.about-section.alt {
-  background-color: #fff;
-}
-
-.about-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.about-container.reverse {
-  flex-direction: column-reverse;
-}
-
-.about-container img {
-  width: 100%;
-  max-width: 450px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.about-text {
-  text-align: center;
-  max-width: 600px;
-}
-
-.about-text h2 {
   color: var(--marron-oscuro);
-  margin-bottom: 1rem;
 }
 
-.mission-section {
-  background-color: var(--naranja-suave);
-  text-align: center;
-  padding: 4rem 2rem;
-}
-
-.mission-cards {
+header {
+  background-color: var(--marron);
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  max-width: 800px;
-  margin: 2rem auto 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
-.card {
-  background-color: white;
-  border-radius: 15px;
+.logo-text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+main {
   padding: 2rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
-.card h3 {
-  margin-bottom: 1rem;
+.sobre-nosotros section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
   color: var(--marron);
 }
 
-.closing-quote {
-  padding: 3rem 2rem;
+.sobre-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+.valores-lista {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.valor {
   text-align: center;
-  font-style: italic;
-  color: var(--marron-oscuro);
-  background-color: var(--crema);
+  width: 30%;
+}
+
+.fundadores-lista {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.fundador {
+  text-align: center;
+}
+
+.fundador-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: var(--marron);
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
 }
