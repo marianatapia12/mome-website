@@ -204,11 +204,6 @@ h2 {
   color: var(--marron);
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--marron);
-}
 .sobre-img {
   width: 100%;
   max-width: 500px;
