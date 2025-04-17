@@ -157,67 +157,60 @@ footer {
   display: block;
 }
 .sobre-nosotros {
-  padding: 2rem;
-  background-color: var(--crema);
+  padding: 3rem 2rem;
   color: var(--marron-oscuro);
+  background-color: var(--crema);
+  font-family: var(--font-family);
+}
+
+.intro-nosotros {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .intro-nosotros h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.intro-nosotros p {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: 0 auto 2rem;
-}
-
-.valores-nosotros {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-.valor {
-  background-color: var(--naranja-suave);
-  border-radius: 20px;
-  padding: 1.5rem;
-  width: 280px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
-}
-
-.valor h2 {
-  color: var(--marron);
-  font-size: 1.2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
-.historia-nosotros {
+.intro-nosotros p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.imagen-nosotros {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
   justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
+  margin: 2rem 0;
 }
 
-.historia-nosotros img {
-  width: 300px;
+.imagen-nosotros img {
+  width: 100%;
+  max-width: 900px;
   border-radius: 20px;
-  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.historia-nosotros div {
-  max-width: 500px;
-  text-align: left;
+.historia-nosotros, .valores-nosotros {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
 }
 
-.historia-nosotros h2 {
-  color: var(--marron);
+.historia-nosotros h2,
+.valores-nosotros h2 {
+  font-size: 1.8rem;
   margin-bottom: 1rem;
+  color: var(--marron);
+}
+
+.valores-nosotros ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.valores-nosotros li {
+  margin-bottom: 0.8rem;
+  font-weight: 500;
 }
