@@ -155,93 +155,88 @@ footer {
   width: auto;
   object-fit: contain;
   display: block;
-.about-page {
-  padding: 3rem 2rem;
-  font-family: var(--font-family);
-  background-color: var(--crema);
-  color: var(--marron-oscuro);
 }
-
 .about-hero {
+  background-color: var(--naranja-suave);
   text-align: center;
-  margin-bottom: 3rem;
+  padding: 4rem 2rem;
+  color: var(--marron-oscuro);
 }
 
 .about-hero h1 {
   font-size: 2.5rem;
-  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
-.about-hero p {
-  font-size: 1.2rem;
-  margin-top: 1rem;
+.about-section {
+  padding: 4rem 2rem;
+  background-color: var(--crema);
 }
 
-.about-content {
+.about-section.alt {
+  background-color: #fff;
+}
+
+.about-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   align-items: center;
+  gap: 2rem;
   max-width: 1000px;
-  margin: 0 auto 4rem;
+  margin: 0 auto;
 }
 
-.about-image img {
+.about-container.reverse {
+  flex-direction: column-reverse;
+}
+
+.about-container img {
   width: 100%;
-  max-width: 600px;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  max-width: 450px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .about-text {
-  max-width: 700px;
   text-align: center;
+  max-width: 600px;
 }
 
 .about-text h2 {
-  font-size: 1.8rem;
-  color: var(--marron);
-  margin-bottom: 1rem;
-}
-
-.about-text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-.about-values {
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.about-values h2 {
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  color: var(--marron);
-}
-
-.value-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
-}
-
-.value-box {
-  background-color: var(--naranja-suave);
-  padding: 1.5rem;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.value-box h3 {
-  margin-bottom: 0.5rem;
   color: var(--marron-oscuro);
-  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
-.value-box p {
-  font-size: 1rem;
-  line-height: 1.5;
+.mission-section {
+  background-color: var(--naranja-suave);
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.mission-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 2rem auto 0;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-bottom: 1rem;
+  color: var(--marron);
+}
+
+.closing-quote {
+  padding: 3rem 2rem;
+  text-align: center;
+  font-style: italic;
+  color: var(--marron-oscuro);
+  background-color: var(--crema);
 }
