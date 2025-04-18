@@ -170,3 +170,104 @@ header {
   align-items: center;
   padding: 1rem 2rem;
 }
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #f8f5f2;
+  color: #333;
+}
+
+.header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #7b4b2a;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #7b4b2a;
+  font-weight: 600;
+}
+
+.nav a.activo {
+  border-bottom: 2px solid #7b4b2a;
+}
+
+.contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.intro-sobre {
+  background: linear-gradient(to right, #f3eae3, #e0d2c0);
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.intro-sobre h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.intro-sobre p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #5c4b3b;
+}
+
+.historia h2,
+.valores h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #7b4b2a;
+}
+
+.historia p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4d3e34;
+}
+
+.lista-valores {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.lista-valores li {
+  font-size: 1.1rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-left: 4px solid #7b4b2a;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #7b4b2a;
+}
