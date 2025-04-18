@@ -3,46 +3,133 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sobre Nosotros | MOME</title>
-  <link rel="stylesheet" href="estilos.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet" />
+  <title>Sobre Nosotros - MOME</title>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --marron-oscuro: #7A341D;
+      --marron: #B9661E;
+      --naranja-suave: #E59D6C;
+      --crema: #EAC0A0;
+      --font-family: 'Quicksand', sans-serif;
+      --titulo-marca: 'Marcellus', serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-family);
+      background-color: var(--crema);
+      color: var(--marron-oscuro);
+    }
+
+    header {
+      background-color: var(--marron);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      height: 3rem;
+      width: auto;
+      object-fit: contain;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 3rem 2rem;
+    }
+
+    .sobre-nosotros {
+      background-color: #fff;
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .titulo-seccion {
+      font-family: var(--titulo-marca);
+      font-size: 2.5rem;
+      color: var(--marron);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .contenido-sobre-nosotros p {
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      text-align: justify;
+    }
+
+    footer {
+      background-color: var(--marron);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .social-icons img {
+      width: 24px;
+      margin-left: 10px;
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <div class="logo">MOME</div>
-    <nav class="nav">
+
+  <header>
+    <img src="logo-mome.png" alt="Logo de MOME" class="logo" />
+    <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
         <li><a href="menu.html">Menú</a></li>
-        <li><a href="sobre-nosotros.html" class="activo">Sobre Nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="sobre-nosotros">
-    <section class="intro-sobre">
-      <div class="contenedor">
-        <h1>Sobre Nosotros</h1>
-        <p>En MOME, creemos en el poder de los alimentos naturales, el diseño con propósito y los espacios que inspiran tranquilidad. Conoce quiénes somos y qué nos mueve.</p>
-      </div>
-    </section>
-
-    <section class="historia">
-      <div class="contenedor">
-        <h2>Nuestra Historia</h2>
+  <main>
+    <section class="sobre-nosotros">
+      <h2 class="titulo-seccion">Sobre nosotros</h2>
+      <div class="contenido-sobre-nosotros">
         <p>
-          Nacimos con la intención de ofrecer algo más que comida: un estilo de vida. Desde nuestros inicios, nos propusimos crear una experiencia multisensorial que conecte con la naturaleza, el bienestar y la estética moderna.
+          En <strong>MOME</strong> combinamos el sabor, el bienestar y el diseño en un mismo espacio. Somos una cafetería y cocina saludable que busca nutrir cuerpo y alma con ingredientes frescos, locales y preparados con cariño.
+        </p>
+        <p>
+          Nuestro equipo está comprometido con ofrecer un menú equilibrado y sabroso, además de un ambiente tranquilo y estéticamente armonioso. Nos inspiramos en el cuidado del planeta y las personas, por eso apostamos por prácticas responsables y sostenibles.
+        </p>
+        <p>
+          Cada plato que servimos, cada taza de café y cada detalle en nuestro local está pensado para que te sientas bien, conectado contigo mismo y con quienes te rodean. ¡Te esperamos para compartir juntos momentos deliciosos!
         </p>
       </div>
     </section>
+  </main>
 
-    <section class="valores">
-      <div class="contenedor">
-        <h2>Nuestros Valores</h2>
-        <ul class="lista-valores">
-          <li><strong>Responsabilidad:</strong> Cuidamos lo que hacemos y cómo lo hacemos.</li>
-          <li><strong>Tranquilidad:</strong> Diseñamos espacios que calman el alma.</li>
-          <li
+  <footer>
+    <p>&copy; 2025 MOME - Todos los derechos reservados</p>
+    <div class="social-icons">
+      <img src="icon-facebook.png" alt="Facebook">
+      <img src="icon-instagram.png" alt="Instagram">
+    </div>
+  </footer>
+
+</body>
+</html>
