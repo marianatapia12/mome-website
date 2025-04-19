@@ -1,1 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reseñas | MOME</title>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Quicksand:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --marron-oscuro: #7A341D;
+      --marron: #B9661E;
+      --naranja-suave: #E59D6C;
+      --crema: #EAC0A0;
+      --font-family: 'Quicksand', sans-serif;
+      --titulo-marca: 'Marcellus', serif;
+    }
 
+    body {
+      margin: 0;
+      font-family: var(--font-family);
+      background-color: var(--crema);
+      color: var(--marron-oscuro);
+    }
+
+    header {
+      background-color: var(--marron);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      height: 4.5rem;
+      width: auto;
+      object-fit: contain;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 3rem 2rem;
+    }
+
+    .titulo-reseñas {
+      font-family: var(--titulo-marca);
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .reseñas-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .reseña {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .reseña:hover {
+      transform: translateY(-5px);
+    }
+
+    .cliente-nombre {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--marron);
+    }
+
+    .estrella {
+      color: gold;
+      font-size: 1.2rem;
+    }
+
+    .comentario {
+      font-size: 0.95rem;
+      color: #444;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      background-color: var(--marron);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 3rem;
+    }
+
+    .social-icons img {
+      width: 24px;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-mome.png" alt="Logo de MOME" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="resenas.html">Reseñas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="titulo-reseñas">Lo que nuestros clientes dicen</h1>
+    <section class="reseñas-container">
+      <div class="reseña">
+        <p class="cliente-nombre">María Gutiérrez</p>
+        <p class="estrella">★★★★★</p>
+        <p class="comentario">El ambiente es perfecto para leer o trabajar. El café de especialidad está increíble, y la atención es súper cálida. ¡Mi nuevo lugar favorito!</p>
+      </div>
+      <div class="reseña">
+        <p class="cliente-nombre">Andrés Molina</p>
+        <p class="estrella">★★★★☆</p>
+        <p class="comentario">Todo delicioso y muy bien presentado. Me encantó el pan artesanal. Volveré sin duda.</p>
+      </div>
+      <div class="reseña">
+        <p class="cliente-nombre">Fernanda López</p>
+        <p class="estrella">★★★★★</p>
+        <p class="comentario">Un espacio acogedor, bonito y con mucho estilo. El matcha latte es el mejor que he probado.</p>
+      </div>
+      <div class="reseña">
+        <p class="cliente-nombre">Daniel Ríos</p>
+        <p class="estrella">★★★★☆</p>
+        <p class="comentario">Muy buena variedad en el menú. El lugar está bien decorado y se siente muy tranquilo. Solo me gustaría más opciones veganas.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MOME. Todos los derechos reservados.</p>
+    <div class="social-icons">
+      <img src="icono-facebook.png" alt="Facebook" />
+      <img src="icono-instagram.png" alt="Instagram" />
+    </div>
+  </footer>
+</body>
+</html>
