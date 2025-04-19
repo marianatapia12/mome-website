@@ -2,9 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MOME | Reseñas</title>
-  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reseñas - MOME</title>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Quicksand&display=swap" rel="stylesheet">
   <style>
     :root {
       --marron-oscuro: #7A341D;
@@ -14,12 +14,14 @@
       --font-family: 'Quicksand', sans-serif;
       --titulo-marca: 'Marcellus', serif;
     }
+
     body {
       margin: 0;
       font-family: var(--font-family);
       background-color: var(--crema);
       color: var(--marron-oscuro);
     }
+
     header {
       background-color: var(--marron);
       display: flex;
@@ -27,6 +29,13 @@
       align-items: center;
       padding: 1rem 2rem;
     }
+
+    .logo {
+      height: 3rem;
+      width: auto;
+      object-fit: contain;
+    }
+
     nav ul {
       list-style: none;
       display: flex;
@@ -34,178 +43,206 @@
       margin: 0;
       padding: 0;
     }
+
     nav a {
       text-decoration: none;
       color: white;
       font-weight: bold;
     }
-    .logo {
-      height: 3.5rem;
-      width: auto;
-      object-fit: contain;
-    }
-    .reseñas {
+
+    main {
       padding: 3rem 2rem;
     }
-    .titulo {
+
+    h1 {
       font-family: var(--titulo-marca);
       font-size: 2.5rem;
       text-align: center;
       margin-bottom: 2rem;
     }
-    .comentarios {
+
+    .reviews {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
-      margin-bottom: 3rem;
     }
-    .comentario {
-      background-color: #fff;
-      border-radius: 20px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-    .comentario img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 0.5rem;
-    }
-    .nombre {
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-    }
-    .formulario-reseña {
+
+    .review {
       background-color: #fff;
       padding: 2rem;
       border-radius: 20px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      max-width: 600px;
-      margin: 0 auto;
+      text-align: center;
     }
-    .formulario-reseña h3 {
-      margin-top: 0;
-      font-family: var(--titulo-marca);
-    }
-    .formulario-reseña input,
-    .formulario-reseña textarea {
-      width: 100%;
-      padding: 0.8rem;
+
+    .review img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
       margin-bottom: 1rem;
-      border-radius: 10px;
+    }
+
+    .review h3 {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+
+    .review p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .rating {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: gold;
+    }
+
+    .form-container {
+      margin-top: 3rem;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .form-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-toggle button {
+      padding: 0.5rem 1rem;
+      background-color: var(--marron);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    form {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    form.active {
+      display: flex;
+    }
+
+    input, textarea {
+      padding: 0.7rem;
       border: 1px solid #ccc;
+      border-radius: 10px;
       font-family: var(--font-family);
     }
-    .formulario-reseña button {
-      background-color: var(--marron);
-      color: white;
-      padding: 0.8rem 1.5rem;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    .auth-buttons {
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-    .auth-buttons button {
-      margin: 0 0.5rem;
+
+    button[type="submit"] {
       background-color: var(--naranja-suave);
       border: none;
-      padding: 0.6rem 1rem;
+      padding: 0.7rem;
       border-radius: 10px;
       font-weight: bold;
       cursor: pointer;
-    }
-    footer {
-      background-color: var(--marron);
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 4rem;
-    }
-    .social-icons img {
-      width: 24px;
-      margin-left: 10px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo MOME" class="logo" />
+    <img src="logo.png" alt="MOME Logo" class="logo" />
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="menu.html">Menú</a></li>
         <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-        <li><a href="resenas.html">Reseñas</a></li>
+        <li><a href="reseñas.html">Reseñas</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="reseñas">
-    <h1 class="titulo">Lo que dicen nuestros clientes</h1>
-    <div class="comentarios">
-      <div class="comentario">
-        <img src="avatar1.jpg" alt="Cliente 1">
-        <div class="nombre">Laura Martínez</div>
-        <p>¡Me encantó el ambiente! El café de vainilla es delicioso y el servicio súper amable.</p>
+  <main>
+    <h1>Reseñas de Nuestros Clientes</h1>
+    <section class="reviews">
+      <div class="review">
+        <img src="cliente1.jpg" alt="Cliente 1">
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <h3>Laura M.</h3>
+        <p>El café más delicioso que he probado, ¡y el ambiente es súper acogedor!</p>
       </div>
-      <div class="comentario">
-        <img src="avatar2.jpg" alt="Cliente 2">
-        <div class="nombre">Carlos Gómez</div>
-        <p>Una joya escondida. Los postres son caseros y el lugar tiene un diseño muy acogedor.</p>
+      <div class="review">
+        <img src="cliente2.jpg" alt="Cliente 2">
+        <div class="rating">⭐⭐⭐⭐</div>
+        <h3>Pedro R.</h3>
+        <p>El servicio es muy amable y rápido. Me encantan sus postres.</p>
       </div>
-      <div class="comentario">
-        <img src="avatar3.jpg" alt="Cliente 3">
-        <div class="nombre">Ana López</div>
-        <p>Perfecto para ir a estudiar o relajarse. El té chai es mi favorito.</p>
+      <div class="review">
+        <img src="cliente3.jpg" alt="Cliente 3">
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <h3>Ana C.</h3>
+        <p>Ideal para trabajar o leer. Siempre encuentro un buen lugar para sentarme.</p>
       </div>
-      <div class="comentario">
-        <img src="avatar4.jpg" alt="Cliente 4">
-        <div class="nombre">Jorge Rivera</div>
-        <p>El servicio al cliente es excepcional, ¡y su panadería es de otro mundo!</p>
+      <div class="review">
+        <img src="cliente4.jpg" alt="Cliente 4">
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <h3>Carlos V.</h3>
+        <p>La presentación de cada platillo es increíble. Muy recomendado.</p>
       </div>
-      <div class="comentario">
-        <img src="avatar5.jpg" alt="Cliente 5">
-        <div class="nombre">Valeria Sánchez</div>
-        <p>¡Volveré sin duda! Ideal para desayunar con amigos.</p>
+      <div class="review">
+        <img src="cliente5.jpg" alt="Cliente 5">
+        <div class="rating">⭐⭐⭐</div>
+        <h3>Isabel F.</h3>
+        <p>Todo está bien, pero me gustaría más opciones sin gluten.</p>
       </div>
-      <div class="comentario">
-        <img src="avatar6.jpg" alt="Cliente 6">
-        <div class="nombre">Marco Ríos</div>
-        <p>Espacio pet-friendly, música suave, excelente café. ¿Qué más se puede pedir?</p>
+      <div class="review">
+        <img src="cliente6.jpg" alt="Cliente 6">
+        <div class="rating">⭐⭐⭐⭐</div>
+        <h3>Mario T.</h3>
+        <p>Buen café, buena música, buena vibra. Siempre regreso.</p>
       </div>
-    </div>
+    </section>
 
-    <div class="auth-buttons">
-      <button onclick="alert('Simulación: Abrir modal de registro')">Registrarse</button>
-      <button onclick="alert('Simulación: Abrir modal de inicio de sesión')">Iniciar sesión</button>
-    </div>
+    <section class="form-container">
+      <div class="form-toggle">
+        <button onclick="toggleForm('register')">Registrarse</button>
+        <button onclick="toggleForm('login')">Iniciar Sesión</button>
+      </div>
 
-    <div class="formulario-reseña">
-      <h3>Deja tu reseña</h3>
-      <form>
-        <input type="text" placeholder="Tu nombre" required />
-        <input type="email" placeholder="Tu correo" required />
+      <form id="register-form" class="active">
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Correo electrónico" required />
         <input type="password" placeholder="Contraseña" required />
-        <textarea rows="4" placeholder="Escribe tu reseña aquí..." required></textarea>
-        <button type="submit">Enviar</button>
+        <textarea placeholder="Escribe tu reseña aquí..." required></textarea>
+        <button type="submit">Enviar Reseña</button>
       </form>
-    </div>
-  </section>
 
-  <footer>
-    <div>&copy; 2025 MOME. Todos los derechos reservados.</div>
-    <div class="social-icons">
-      <img src="facebook-icon.png" alt="Facebook" />
-      <img src="instagram-icon.png" alt="Instagram" />
-    </div>
-  </footer>
+      <form id="login-form">
+        <input type="email" placeholder="Correo electrónico" required />
+        <input type="password" placeholder="Contraseña" required />
+        <textarea placeholder="Escribe tu reseña aquí..." required></textarea>
+        <button type="submit">Enviar Reseña</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    function toggleForm(form) {
+      document.getElementById("register-form").classList.remove("active");
+      document.getElementById("login-form").classList.remove("active");
+
+      if (form === 'register') {
+        document.getElementById("register-form").classList.add("active");
+      } else {
+        document.getElementById("login-form").classList.add("active");
+      }
+    }
+  </script>
 </body>
 </html>
