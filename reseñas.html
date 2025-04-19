@@ -2,9 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Reseñas | MOME</title>
-  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Quicksand:wght@400;600&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOME | Reseñas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
       --marron-oscuro: #7A341D;
@@ -14,14 +14,12 @@
       --font-family: 'Quicksand', sans-serif;
       --titulo-marca: 'Marcellus', serif;
     }
-
     body {
       margin: 0;
       font-family: var(--font-family);
       background-color: var(--crema);
       color: var(--marron-oscuro);
     }
-
     header {
       background-color: var(--marron);
       display: flex;
@@ -29,13 +27,6 @@
       align-items: center;
       padding: 1rem 2rem;
     }
-
-    .logo {
-      height: 4.5rem;
-      width: auto;
-      object-fit: contain;
-    }
-
     nav ul {
       list-style: none;
       display: flex;
@@ -43,60 +34,91 @@
       margin: 0;
       padding: 0;
     }
-
     nav a {
       text-decoration: none;
       color: white;
       font-weight: bold;
     }
-
-    main {
+    .logo {
+      height: 3.5rem;
+      width: auto;
+      object-fit: contain;
+    }
+    .reseñas {
       padding: 3rem 2rem;
     }
-
-    .titulo-reseñas {
+    .titulo {
       font-family: var(--titulo-marca);
       font-size: 2.5rem;
       text-align: center;
       margin-bottom: 2rem;
     }
-
-    .reseñas-container {
+    .comentarios {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
+      margin-bottom: 3rem;
     }
-
-    .reseña {
+    .comentario {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .comentario img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+    }
+    .nombre {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .formulario-reseña {
       background-color: #fff;
       padding: 2rem;
       border-radius: 20px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
+      max-width: 600px;
+      margin: 0 auto;
     }
-
-    .reseña:hover {
-      transform: translateY(-5px);
+    .formulario-reseña h3 {
+      margin-top: 0;
+      font-family: var(--titulo-marca);
     }
-
-    .cliente-nombre {
+    .formulario-reseña input,
+    .formulario-reseña textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-family: var(--font-family);
+    }
+    .formulario-reseña button {
+      background-color: var(--marron);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
       font-weight: bold;
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-      color: var(--marron);
     }
-
-    .estrella {
-      color: gold;
-      font-size: 1.2rem;
+    .auth-buttons {
+      text-align: center;
+      margin-bottom: 1.5rem;
     }
-
-    .comentario {
-      font-size: 0.95rem;
-      color: #444;
-      margin-top: 0.5rem;
+    .auth-buttons button {
+      margin: 0 0.5rem;
+      background-color: var(--naranja-suave);
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
     }
-
     footer {
       background-color: var(--marron);
       color: white;
@@ -104,9 +126,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 3rem;
+      margin-top: 4rem;
     }
-
     .social-icons img {
       width: 24px;
       margin-left: 10px;
@@ -115,7 +136,7 @@
 </head>
 <body>
   <header>
-    <img src="logo-mome.png" alt="Logo de MOME" class="logo" />
+    <img src="logo.png" alt="Logo MOME" class="logo" />
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -127,37 +148,63 @@
     </nav>
   </header>
 
-  <main>
-    <h1 class="titulo-reseñas">Lo que nuestros clientes dicen</h1>
-    <section class="reseñas-container">
-      <div class="reseña">
-        <p class="cliente-nombre">María Gutiérrez</p>
-        <p class="estrella">★★★★★</p>
-        <p class="comentario">El ambiente es perfecto para leer o trabajar. El café de especialidad está increíble, y la atención es súper cálida. ¡Mi nuevo lugar favorito!</p>
+  <section class="reseñas">
+    <h1 class="titulo">Lo que dicen nuestros clientes</h1>
+    <div class="comentarios">
+      <div class="comentario">
+        <img src="avatar1.jpg" alt="Cliente 1">
+        <div class="nombre">Laura Martínez</div>
+        <p>¡Me encantó el ambiente! El café de vainilla es delicioso y el servicio súper amable.</p>
       </div>
-      <div class="reseña">
-        <p class="cliente-nombre">Andrés Molina</p>
-        <p class="estrella">★★★★☆</p>
-        <p class="comentario">Todo delicioso y muy bien presentado. Me encantó el pan artesanal. Volveré sin duda.</p>
+      <div class="comentario">
+        <img src="avatar2.jpg" alt="Cliente 2">
+        <div class="nombre">Carlos Gómez</div>
+        <p>Una joya escondida. Los postres son caseros y el lugar tiene un diseño muy acogedor.</p>
       </div>
-      <div class="reseña">
-        <p class="cliente-nombre">Fernanda López</p>
-        <p class="estrella">★★★★★</p>
-        <p class="comentario">Un espacio acogedor, bonito y con mucho estilo. El matcha latte es el mejor que he probado.</p>
+      <div class="comentario">
+        <img src="avatar3.jpg" alt="Cliente 3">
+        <div class="nombre">Ana López</div>
+        <p>Perfecto para ir a estudiar o relajarse. El té chai es mi favorito.</p>
       </div>
-      <div class="reseña">
-        <p class="cliente-nombre">Daniel Ríos</p>
-        <p class="estrella">★★★★☆</p>
-        <p class="comentario">Muy buena variedad en el menú. El lugar está bien decorado y se siente muy tranquilo. Solo me gustaría más opciones veganas.</p>
+      <div class="comentario">
+        <img src="avatar4.jpg" alt="Cliente 4">
+        <div class="nombre">Jorge Rivera</div>
+        <p>El servicio al cliente es excepcional, ¡y su panadería es de otro mundo!</p>
       </div>
-    </section>
-  </main>
+      <div class="comentario">
+        <img src="avatar5.jpg" alt="Cliente 5">
+        <div class="nombre">Valeria Sánchez</div>
+        <p>¡Volveré sin duda! Ideal para desayunar con amigos.</p>
+      </div>
+      <div class="comentario">
+        <img src="avatar6.jpg" alt="Cliente 6">
+        <div class="nombre">Marco Ríos</div>
+        <p>Espacio pet-friendly, música suave, excelente café. ¿Qué más se puede pedir?</p>
+      </div>
+    </div>
+
+    <div class="auth-buttons">
+      <button onclick="alert('Simulación: Abrir modal de registro')">Registrarse</button>
+      <button onclick="alert('Simulación: Abrir modal de inicio de sesión')">Iniciar sesión</button>
+    </div>
+
+    <div class="formulario-reseña">
+      <h3>Deja tu reseña</h3>
+      <form>
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="Tu correo" required />
+        <input type="password" placeholder="Contraseña" required />
+        <textarea rows="4" placeholder="Escribe tu reseña aquí..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 MOME. Todos los derechos reservados.</p>
+    <div>&copy; 2025 MOME. Todos los derechos reservados.</div>
     <div class="social-icons">
-      <img src="icono-facebook.png" alt="Facebook" />
-      <img src="icono-instagram.png" alt="Instagram" />
+      <img src="facebook-icon.png" alt="Facebook" />
+      <img src="instagram-icon.png" alt="Instagram" />
     </div>
   </footer>
 </body>
